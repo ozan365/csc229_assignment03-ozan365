@@ -14,7 +14,7 @@ public class Main {
         //array representing 20 bags
         double[] arr = new double[20];
 
-        for(int i = 0; i < 20; i++) {
+        for(int i = 0; i < 20; i++) { //STEP 1
             //set every array element to 1.0
             arr[i] = 1.0;
             //if the element is the chosen heavy bag set to 1.1
@@ -26,12 +26,13 @@ public class Main {
         System.out.println(r1 + 1 + "\n");
 
 
-        for(int i = 0;i < 20; i++) {
+        for(int i = 0;i < 20; i++) { //STEPS 2, 3, 4 and 5
             //add the weight of each M&M (element in array) times the number of the bag (represented by the for loop iterating over each bag number) to sum
             sum += arr[i] * (i + 1);
         }
 
         //subtract sum by 210.0 and divide by 0.1
+        //STEP 6 and 7
         answer = (sum - 210.0) / 0.1;
 
         //print out the value of answer
